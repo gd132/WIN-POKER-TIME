@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Покерный анализатор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#analysis">Анализ раздач</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Добро пожаловать в Покерный Анализатор!</h1>
+            <p>Загрузите свою раздачу, чтобы получить подробный анализ и рекомендации по стратегии.</p>
+        </section>
+
+        <section id="analysis">
+            <h2>Анализ раздачи</h2>
+            <div class="upload-area">
+                <h3>Загрузите раздачу:</h3>
+                <input type="file" id="hand-upload" accept=".txt, .json">
+                <button id="analyze-button">Анализировать</button>
+            </div>
+
+            <div id="analysis-result">
+                <h3>Результат анализа:</h3>
+                <div id="hand-details"></div>
+                <div id="strategy-suggestions"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Покерный анализатор © 2024</p>
+    </footer>
+
+    <script src="analysis.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
